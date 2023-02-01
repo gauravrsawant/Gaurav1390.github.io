@@ -1,0 +1,19 @@
+body{background-color: bisque;
+}
+
+h2{
+    font-family: monospace;
+}
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+b{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+img {
+    border-radius: 60%;
+    border-style: groove;
+  }
+
