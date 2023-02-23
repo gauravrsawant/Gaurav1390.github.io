@@ -1,0 +1,114 @@
+#ground{
+    position: relative;
+    margin: 48px auto;
+    border: 5px solid brown;
+    height: 630px;
+    width: 93%;
+    background-image: url("ground.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* #goal-post {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2%;
+    height: 40%;
+    background-color: white;
+} */
+
+#ball {
+    position: absolute;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("soccer-ball-png-26391\(1\).png");
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    animation-name: myfirst;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    overflow: hidden;
+    
+}
+
+
+@-webkit-keyframes myfirst {
+    0%   {left:315px; transform: rotate(0deg);}
+    25%  {left:1215px; transform: rotate(360deg);}
+    50%  {left:315px; transform: rotate(-720deg);}
+    75%  {left:1215px; transform: rotate(720deg);}
+    100% {left:315px; transform: rotate(-1080deg);}
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(500px) scaleX(1);
+    }
+    100% {
+        transform: perspective(500px) scaleX(-1);
+    }
+}
+
+
+#player1 {
+    position: absolute;
+    top: 47%;
+    left: 77%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    animation: flip 2.5s infinite;
+    /* animation-play-state: running; */
+    /* animation-delay: 1s; */
+    /* animation-name: flip;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s; */
+} 
+
+
+#player2 {
+    position: absolute;
+    top: 45%;
+    left: 13%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: auto;
+    animation: flip 5s infinite;
+
+} 
+
+
+#buttons {
+    margin-top: 20px;
+}
+
+#start-btn, #stop-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#start-btn {
+    background-color: green;
+    color: white;
+}
+
+#stop-btn {
+    background-color: red;
+    color: white;
+}
+
+/* serialization
+avro
+avro types
+complex data types
+avro schema 
+
+*/
