@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h2>Student Information</h2>
+  <div class="row">
+    <div class="col">
+      <form>
+        <label for="rollno">Roll Number:</label>
+        <input type="text" name="rollno" required>
+
+        <label for="email">Address:</label>
+        <br>
+        <textarea name="email" required name="Address" rows="4" cols="50"></textarea>
+        <br>
+        <label for="gender">Gender:</label>
+        <br>
+        <input type="radio"  name="gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio"  name="gender" value="Female">
+        <label for="css">Female</label>
+        <input type="radio" name="gender" value="Other">
+        <label for="Other">Other</label>
+        <br>
+
+        <label>Subjects:</label><br>
+        <input type="checkbox"  name="subject" value=" DSTC 310" >
+        <label for="subject1">DSTC 310 (Intro to Data Science)</label><br>
+        <input type="checkbox"  name="subject" value=" DSTC 311" >
+        <label for="subject2">DSTC 311 (Big Data Framework)</label><br>
+        <input type="checkbox"  name="subject" value=" DSPC 312" >
+        <label for="subject3">DSPC 312 (Intro to Data Science Lab)</label><br>
+        <input type="checkbox"  name="subject" value=" DSPC 313" >
+        <label for="subject4">DSPC 313 (Big Data Framework Lab)</label><br>
+        <input type="checkbox"  name="subject" value=" DSTE 601" >
+        <label for="subject5">DSTE 601 (Web App Dev)</label><br>
+        <input type="checkbox"  name="subject" value=" DSTE 602" >
+        <label for="subject6">DSTE 602 (Cloud Computing)</label><br>
+
+        <label for="semester">Semester:</label>
+        <select name="semester" required>
+          <option value="">Select Semester</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <input type="button" value="Add Student" id="checkBtn" onclick="addStudent()">
+      </form>
+    </div>
+    <div class="col">
+      <table id="table">
+        <tr>
+          <th>Roll Number</th>
+          <th>Address</th>
+          <th>Gender</th>
+          <th>Subjects</th>
+          <th>Semester</th>
+        </tr>
+    </table>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
