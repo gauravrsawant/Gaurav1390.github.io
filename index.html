@@ -11,17 +11,40 @@
       left: 6%;
       font-size: 56px;
       color: rgb(232, 232, 232);
-      text-align: center; /* To center the text vertically */
+      text-align: center; 
       margin-bottom: 0; 
     }
     
-    /* Add styling for the horizontal line */
     hr {
         width: 25%; /* Adjust as needed */
         position: absolute;
         top: 27%;
         left: 5.4%;
         border: 1px solid rgb(232, 232, 232);
+    }
+    
+    ol > li > ul {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 0;
+      margin: 0;
+    }
+    ol > li:hover > ul {
+      display: block;
+    }
+    ol > li > ul > li {
+      list-style: none;
+      padding: 5px;
+      margin: 0;
+    }
+    ol > li > ul > li > a {
+      color: #333;
+      text-decoration: none;
+    }
+    ol > li > ul > li > a:hover {
+      color: #007bff;
     }
   </style>
 </head>
@@ -40,6 +63,13 @@
     <li><a href="https://gaurav1390.github.io/Assignment_4" target="_blank">Assignment 4</a></li>
     <li><a href="https://gaurav1390.github.io/Assignment_5" target="_blank">Assignment 5</a></li>
     <li><a href="./Assignment_6" target="_blank">Assignment 6</a></li>
+    <li>
+      <a href="#">Assignment 7 &#9662;</a>
+      <ul>
+        <li><a href="./Assignment_7/Assignment 7.1" target="_blank">Assignment 7.1</a></li>
+        <li><a href="https://gaurav3456.github.io/Assignment_7/Assignment 7.2" target="_blank">Assignment 7.2</a></li>
+      </ul>
+    </li>
     
   </ol>
   </div>
