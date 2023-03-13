@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col,.coll{
+    flex: 1;
+    margin: 10px;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 0 6px 0;
+    display: inline-block;
+  }
+  
+  .cell-header {
+    width: calc(100% / 5);
+  }
+  
+  .cell-data {
+    width: calc(100% / 5);
+    padding-left: 5px;
+  }
+  .cell,.cell-data{
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgb(152, 255, 221);
+  }
+
+  
