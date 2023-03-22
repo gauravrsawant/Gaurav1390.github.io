@@ -1,0 +1,60 @@
+.card-header {
+    background-color: #196cab;
+    /* padding: 25px 10; */
+    border-bottom: none;
+    cursor: pointer;
+    padding-top: 0px;
+  }
+  
+  .card-header button {
+    /* font-weight: bold; */
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+    padding-left: 0px;
+   
+  }
+  .btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px ;
+  }
+
+  .btn:not(.collapsed) i {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .card-header button:not(.collapsed) {
+    color: #000000;
+  }
+  
+  .collapse:not(.show) {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .collapse {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .container{
+    width: 600px;
+    border-radius: 6px;
+
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
